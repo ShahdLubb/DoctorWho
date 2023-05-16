@@ -80,6 +80,9 @@ INSERT INTO tblEpisode(EpisodeId,SeriesNumber,EpisodeNumber,EpisodeType,Title,Ep
 Values(9,8,11,'Sci-Fi Adventure','Dark Water','2014-11-01',4,4);
 INSERT INTO tblEpisode(EpisodeId,SeriesNumber,EpisodeNumber,EpisodeType,Title,EpisodeDate,AuthorId,DoctorId)
 Values(10,12,10,'Adventure, Drama','The Timeless Children','2020-03-01',5,5);
+INSERT INTO tblEpisode(EpisodeId,SeriesNumber,EpisodeNumber,EpisodeType,Title,EpisodeDate,AuthorId)
+Values(11,12,12,'Adventure, Drama','The Timeless Children','2020-03-15',5);
+
 
 
 -- Inserting EpisodeCompanions
