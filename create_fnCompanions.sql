@@ -1,9 +1,13 @@
 CREATE FUNCTION fnCompanions (@EpisodeId INT)
-RETURNS TABLE AS
-RETURN
-	SELECT CompanionName
+RETURNS VARCHAR(50) AS
+BEGIN
+    DECLARE @CompanionName VARCHAR(50);
+	SELECT @CompanionName=[CompanionName]
 	FROM tblEpisodeCompanion Episodes JOIN  tblCompanion Companions ON Episodes.CompanionId=Companions.CompanionId
 	WHERE Episodes.EpisodeId=@EpisodeId;
 
+	return @CompanionName
+END ;
+   
 
    
